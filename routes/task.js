@@ -6,7 +6,7 @@ const Task = require("../models/task");
 router.post("/tasks", async (req, res) => {
   console.log(req.body);
   const task = new Task(req.body);
-
+ 
   try {
     await task.save();
     res.status(201).send(201).send(task);
