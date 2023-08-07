@@ -3,6 +3,9 @@ const router = express.Router();
 
 const User = require("../models/user");
 
+
+// Authorization
+
 router.post("/users/login", async (req, res) => {
   try {
     const user = await User.findByCredentials(
