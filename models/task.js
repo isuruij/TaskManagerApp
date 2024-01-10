@@ -3,7 +3,7 @@ const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
 //creating a schema model
-const userSchema = new Schema({
+const taskSchema = new Schema({
   discription: {
     type: String,
     required: true,
@@ -20,7 +20,7 @@ const userSchema = new Schema({
 });
 
 // creating a model using the schema
-const Task = mongoose.model("Task", userSchema);
+const Task = mongoose.model("Task", taskSchema);
 
 // exporting the model to use it in another program files
 module.exports = Task;
