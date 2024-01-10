@@ -13,7 +13,7 @@ const userSchema = new Schema({
     required: true,
   },
   owner: {
-    type: mongoose.Schema.Types.ObjectId,
+    type: String,
     required: false,
     unique: false,
   },

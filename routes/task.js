@@ -7,9 +7,9 @@ router.post("/tasks", async (req, res) => {
   console.log(req.body);
   const task = new Task(req.body);
  
-  try {
+  try { 
     await task.save();
-    res.status(201).send(201).send(task);
+    res.status(201).send(task);
   } catch (error) {
     res.status(400).send(error);
   }
@@ -38,6 +38,7 @@ router.patch("/tasks/:id", async (req, res) => {
     res.status(400).send(error);
   }
 });
+
 
 
 router.delete("/tasks/:id", async (req, res) => {

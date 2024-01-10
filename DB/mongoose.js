@@ -1,7 +1,6 @@
 
 const mongoose = require("mongoose");
-const monogdbURL =
-  "mongodb+srv://94812277frtp:pass123@cluster0.wivhvg9.mongodb.net/database?retryWrites=true&w=majority";
+const monogdbURL = "mongodb+srv://user:123@cluster0.wivhvg9.mongodb.net/?retryWrites=true&w=majority";
 mongoose.connect(monogdbURL, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
